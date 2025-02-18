@@ -28,5 +28,7 @@ namespace ClipShare.Core.Entities
         public Category Category { get; set; }
         [ForeignKey("ChannelId")]
         public Channel Channel { get; set; }
+        public ICollection<Comment> Comments { get; set; }
+        public ICollection<LikeDislike> LikeDislikes { get; set; }
     }
 }

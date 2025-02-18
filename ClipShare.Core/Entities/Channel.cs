@@ -16,5 +16,6 @@ namespace ClipShare.Core.Entities
         //Navigations
         public AppUser AppUser { get; set; }
         public ICollection<Video> Videos { get; set; }
+        public ICollection<Subscribe> Subscribes { get; set; }
     }
 }
